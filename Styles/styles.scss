@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Coustard&display=swap");
+body {
+    align-items: center;
+    background-color: #d3d5e9;
+    display: flex;
+    font-family: "Coustard";
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+}
+
+.phone {
+    background-color: #fff;
+    border-radius: 32px;
+    box-shadow: 0 0.7px 2.7px rgba(0, 0, 0, 0.016), 0 1.7px 6.9px rgba(0, 0, 0, 0.022),
+        0 3.5px 14.2px rgba(0, 0, 0, 0.028), 0 7.3px 29.2px rgba(0, 0, 0, 0.034), 0 20px 80px rgba(0, 0, 0, 0.05);
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    width: 240px;
+}
+
+.phone-container {
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subtitle {
+    margin: 48px 20px 0;
+}
+
+.subtitle--shallow {
+    margin-top: 36px;
+}
+
+.movies-container {
+    width: 100%;
+}
+
+.movies {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.movies2 {
+    display: flex;
+    margin: 0 20px;
+}
+
+.movies3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 60px;
+}
+
+.movie {
+    cursor: pointer;
+    height: 89px;
+    margin-top: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transform-origin: 50%;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 58px;
+}
+
+.movie.active {
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(3.31034);
+}
+
+.movie.movie2.active {
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(3.3103);
+}
+
+.movie4 {
+    margin-right: 13px;
+}
+
+.movie-cover {
+    background-size: 58px 89px;
+    height: 100%;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #888;
+    height: 4px;
+    margin-top: 4px;
+}
+
+.progress-bar {
+    background-color: #ffa9a9;
+    height: 4px;
+    position: relative;
+    top: -4px;
+}
+
+.progress-bar.left {
+    width: 60%;
+}
+
+.progress-bar.middle {
+    width: 47%;
+}
+
+.progress-bar.right {
+    width: 17%;
+}
+
+.close-ups {
+    pointer-events: none;
+}
+
+.close-ups,
+.close-up {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.close-up {
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 100ms 100ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.close-up.movie1 {
+    background-color: #dfbc84;
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(0.3);
+}
+
+.close-up.movie2 {
+    background-color: #fa9171;
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(0.3);
+}
+
+.close-up.movie3 {
+    background-color: #e0e0e0;
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(0.3);
+}
+
+.close-up.movie4 {
+    background-color: #eea07c;
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(0.3);
+}
+
+.close-up.movie5 {
+    background-color: #e0e0e0;
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(0.3);
+}
+
+.close-up.movie6 {
+    background-color: #a6cfd8;
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(0.3);
+}
+
+.close-up.movie7 {
+    background-color: #f78c87;
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(0.3);
+}
+
+.close-up.movie8 {
+    background-color: #eba17e;
+    transform: translateX(var(--delta-x)) translateY(var(--delta-y)) scale(0.3);
+}
+
+.close-ups.active,
+.close-up.active {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.close-up-cover {
+    background-size: 192px 295px;
+    height: 295px;
+    left: 10%;
+    position: absolute;
+    top: 10%;
+    width: 192px;
+}
+
+.text {
+    left: 24px;
+    position: relative;
+    top: 360px;
+}
+
+.text2 {
+    font-size: 12px;
+    left: 24px;
+    position: relative;
+    top: 360px;
+}
+
+.text3 {
+    color: #45443b;
+    font-size: 12px;
+    left: 24px;
+    position: relative;
+    top: 370px;
+}
+
+/* Images */
+.die-hard {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg");
+}
+
+.men-in-black {
+    background-image: url("https://flxt.tmsimg.com/assets/p19526_p_v10_av.jpg");
+}
+
+.sicario {
+    background-image: url("https://img01.mgo-images.com/image/thumbnail/v2/content/MMV50ADF5767F45C965C6E8454F2847A4369.jpeg");
+}
+
+.mission-impossible {
+    background-image: url("https://cdn.shopify.com/s/files/1/1416/8662/products/mission_impossible_1996_advance_original_film_art_00d873a1-0b0d-46f8-a285-d5cd7fb73d91_1200x.jpg?v=1585255192");
+}
+
+.batman {
+    background-image: url("https://d9nvuahg4xykp.cloudfront.net/6461659004226608318/7179075601598019211.jpg");
+}
+
+.deadpool {
+    background-image: url("https://imjeffreyrex.files.wordpress.com/2016/02/deadpool-poster.jpg");
+}
+
+.jurassic-park {
+    background-image: url("https://lh3.googleusercontent.com/proxy/GD4jVeYwyrUJ9XBH90Y4prguwNbjrOX-kWQ-EphM9n6IiRec2uxy9MskPpltCKVngPelc_SnSSMCfC9R71pzQ7ggA-oA7bdOrwL5Zr5EarDtL8Kjq4xkWQ");
+}
+
+.ready-player-one {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BY2JiYTNmZTctYTQ1OC00YjU4LWEwMjYtZjkwY2Y5MDI0OTU3XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_.jpg");
+}
